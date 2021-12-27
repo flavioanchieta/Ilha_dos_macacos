@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class Selva {
 
   public static void main(final String[] args) {
+	  
+// Criando ilhas
     final int[][] ilha1 = {
       { 1, 3, 3 },
       { 2, 1, 4 },
@@ -33,6 +35,7 @@ public class Selva {
     processaSelva(ilha3);
   }
 
+// Metodo de processamento da ilha(Matriz)
   private static void processaSelva(final int[][] ilha) {
 	  imprimeSelva(ilha);
 	  System.out.print("Caminho percorrido = ");
@@ -44,6 +47,7 @@ public class Selva {
     int linhaAtual = 0;
     int ultimaLinha = 0;
 
+// Lendo linhas e colunas
     for (int i = 0; i < columns; i++) {
       int maiorNaColuna = 0;
       for (int j = 0; j < linhas; j++) {
